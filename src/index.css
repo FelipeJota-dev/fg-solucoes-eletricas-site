@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E53935;
+  --color-primary-hover: #D32F2F;
+  --color-secondary: #121212;
+  --color-soft-white: #FAFAFA;
+  --color-light-gray: #F2F2F2;
+  --color-graphite: #1F1F1F;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-soft-white text-graphite font-sans antialiased selection:bg-primary/20 selection:text-primary overflow-x-hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.glass-header {
+  @apply bg-soft-white/90 backdrop-blur-md border-b border-light-gray/50;
+}
+
+.premium-card {
+  @apply bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-light-gray/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300;
+}
+
+.premium-dark-card {
+  @apply bg-[#1A1A1A] rounded-2xl border border-white/5 hover:border-primary/30 transition-colors duration-300;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
