@@ -54,7 +54,7 @@ export function Services() {
   ];
 
   return (
-    <section id="servicos" className="py-24 bg-[#F2F2F2]">
+    <section id="servicos" className="py-16 sm:py-24 bg-[#F2F2F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2 

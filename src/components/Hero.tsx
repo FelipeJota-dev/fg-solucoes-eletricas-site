@@ -18,7 +18,7 @@ export function Hero() {
   };
 
   return (
-    <section id="inicio" className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+    <section id="inicio" className="pt-24 pb-12 sm:pt-32 sm:pb-16 md:pt-40 md:pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
@@ -80,11 +80,11 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative lg:ml-10"
           >
-            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] max-w-md mx-auto lg:ml-auto">
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] max-w-sm sm:max-w-md mx-auto lg:ml-auto">
               <img 
                 src="https://i.imgur.com/64Flldq.jpeg" 
                 alt="Eletricista trabalhando" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
@@ -94,14 +94,14 @@ export function Hero() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="absolute -left-6 bottom-16 bg-white p-4 rounded-xl shadow-xl border border-gray-100 flex items-center gap-3"
+              className="absolute -left-2 sm:-left-6 bottom-10 sm:bottom-16 bg-white p-3 sm:p-4 rounded-xl shadow-xl border border-gray-100 flex items-center gap-3 z-10"
             >
-               <div className="w-10 h-10 rounded-full bg-[#E53935]/10 flex items-center justify-center text-[#E53935]">
-                 <ShieldCheck className="w-5 h-5" />
+               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#E53935]/10 flex items-center justify-center text-[#E53935] shrink-0">
+                 <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5" />
                </div>
                <div>
-                 <p className="text-xs text-gray-500 font-medium">Garantia</p>
-                 <p className="font-bold text-[#121212] text-sm">Serviço com segurança</p>
+                 <p className="text-[10px] sm:text-xs text-gray-500 font-medium">Garantia</p>
+                 <p className="font-bold text-[#121212] text-xs sm:text-sm">Serviço com segurança</p>
                </div>
             </motion.div>
 
@@ -109,14 +109,14 @@ export function Hero() {
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.8 }}
-              className="absolute -right-6 top-16 bg-white p-4 rounded-xl shadow-xl border border-gray-100 flex items-center gap-3"
+              className="absolute -right-2 sm:-right-6 bottom-28 sm:top-16 bg-white p-3 sm:p-4 rounded-xl shadow-xl border border-gray-100 flex items-center gap-3 z-10"
             >
-               <div className="w-10 h-10 rounded-full bg-[#121212]/5 flex items-center justify-center text-[#121212]">
-                 <Clock className="w-5 h-5" />
+               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#121212]/5 flex items-center justify-center text-[#121212] shrink-0">
+                 <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
                </div>
                <div>
-                 <p className="text-xs text-gray-500 font-medium">Urgência</p>
-                 <p className="font-bold text-[#121212] text-sm">Resposta rápida 24h</p>
+                 <p className="text-[10px] sm:text-xs text-gray-500 font-medium">Urgência</p>
+                 <p className="font-bold text-[#121212] text-xs sm:text-sm">Resposta rápida 24h</p>
                </div>
             </motion.div>
           </motion.div>

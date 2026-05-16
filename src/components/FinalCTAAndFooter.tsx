@@ -5,7 +5,7 @@ import { WHATSAPP_URL } from '../lib/utils';
 export function FinalCTAAndFooter() {
   return (
     <>
-      <section className="bg-[#121212] pt-24 pb-12 relative overflow-hidden">
+      <section className="bg-[#121212] pt-16 sm:pt-24 pb-12 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-[#E53935]/15 blur-[100px] pointer-events-none"></div>
         

@@ -31,7 +31,7 @@ export function Safety() {
   ];
 
   return (
-    <section className="py-24 bg-[#121212] text-white relative overflow-hidden">
+    <section className="py-16 sm:py-24 bg-[#121212] text-white relative overflow-hidden">
       {/* Decorative gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-64 bg-[#E53935]/20 blur-[120px] rounded-full pointer-events-none"></div>
 

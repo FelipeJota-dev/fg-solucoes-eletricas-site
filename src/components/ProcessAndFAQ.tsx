@@ -45,7 +45,7 @@ export function ProcessAndFAQ() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 bg-[#FAFAFA]">
+    <section id="faq" className="py-16 sm:py-24 bg-[#FAFAFA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Process */}

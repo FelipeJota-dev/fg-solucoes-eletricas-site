@@ -28,7 +28,7 @@ export function FloatingWhatsApp() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:shadow-[#25D366]/30 transition-all"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl hover:shadow-[#25D366]/30 transition-all"
           aria-label="Falar no WhatsApp"
         >
           {/* Using a custom icon or Phosphor/Lucide WhatsApp if we had one, but Phone filled is good fallback. 

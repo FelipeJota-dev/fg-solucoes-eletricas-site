@@ -5,7 +5,7 @@ import { WHATSAPP_URL } from '../lib/utils';
 
 export function About() {
   return (
-    <section id="sobre" className="py-20 bg-white">
+    <section id="sobre" className="py-16 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
@@ -14,13 +14,13 @@ export function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative"
+            className="relative px-4 sm:px-0"
           >
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden max-w-sm ml-auto mr-8 lg:mx-auto">
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden max-w-[280px] sm:max-w-sm ml-auto mr-4 sm:mr-8 lg:mx-auto shadow-2xl">
               <img 
                 src="https://i.imgur.com/R7kUaPZ.jpeg" 
                 alt="Francisco realizando serviço elétrico" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             
@@ -29,12 +29,12 @@ export function About() {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="absolute bottom-10 -left-6 lg:-left-12 w-48 aspect-square rounded-2xl overflow-hidden border-8 border-white shadow-xl"
+              className="absolute bottom-6 sm:bottom-10 -left-2 sm:-left-6 lg:-left-12 w-32 sm:w-48 aspect-square rounded-2xl overflow-hidden border-[6px] sm:border-8 border-white shadow-2xl z-10"
             >
               <img 
                 src="https://i.imgur.com/095p2nA.jpeg" 
                 alt="Detalhe do serviço" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </motion.div>
 
@@ -43,14 +43,14 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="absolute -top-6 -right-6 lg:-right-2 bg-white px-6 py-4 rounded-xl shadow-lg border border-gray-100 flex items-center gap-4"
+              className="absolute -top-4 sm:-top-6 -right-2 sm:-right-6 lg:-right-2 bg-white px-4 sm:px-6 py-3 sm:py-4 rounded-xl shadow-xl border border-gray-100 flex items-center gap-3 sm:gap-4 z-10"
             >
-              <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-green-600">
-                <CheckCircle2 className="w-6 h-6" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-50 rounded-full flex items-center justify-center text-green-600 shrink-0">
+                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div>
-                <p className="font-bold text-[#121212] text-lg leading-none">100%</p>
-                <p className="text-sm text-gray-500 font-medium">Avaliações Positivas</p>
+                <p className="font-bold text-[#121212] text-base sm:text-lg leading-none">100%</p>
+                <p className="text-[10px] sm:text-sm text-gray-500 font-medium">Avaliações Positivas</p>
               </div>
             </motion.div>
           </motion.div>
